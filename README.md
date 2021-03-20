@@ -16,3 +16,7 @@ To run in console:
 - Download files "git clone https://github.com/YaroslavLys/LAB_3.git"
 - Go into folder
 - Type "python main.py"
+
+LAB_4
+
+Added testing
