@@ -16,13 +16,13 @@ class ArmamentManager:
 
     def sort_by_price(self, order: SortOrder):
         out = list()
-        self.items.sort(key=lambda x: x.price, reverse=bool(order.value))
+        self.items.sort(key=lambda x: x.price, reverse=order.value)
         out = self.items
         return out
 
     def sort_by_mortality_rate(self, order: SortOrder):
         out = list()
-        self.items.sort(key=lambda x: x.mortality_rate, reverse=bool(order.value))
+        self.items.sort(key=lambda x: x.mortality_rate, reverse=order.value)
         out = self.items
         return out
 
