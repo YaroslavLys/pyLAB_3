@@ -25,7 +25,7 @@ class TestArmamentManager(unittest.TestCase):
     def test_search_by(self):
         self.assertEqual(self.manager.search_by("Scouting"), [self.drone, self.knife, self.pistol, self.ghilliesuit])
 
-    def test_sort_by_musicians_number(self):
+    def test_sort_by_price(self):
         self.assertEqual(self.manager.sort_by_price(SortOrder.ASC),
                          [self.drone, self.knife, self.pistol, self.ghilliesuit, self.tank])
 
